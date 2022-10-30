@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:150px repeat(12,1fr);
+    grid-template-rows:2fr 3fr 2fr;
+    gap: 15px;
+    padding: 10px;
+    text-align: center;
+    
+}
+.sidebar{
+    background-color: red;
+    grid-row: 1/-1;
+}
+.header{
+    background-color: aqua;
+    grid-column: 2/12;
+}
+.logo{
+    background-color: tomato;
+    grid-column: 12/14;
+}
+.body{
+    background: rgb(75, 55, 55);
+    grid-column:2/7 ;
+    color: white;
+}
+.body2{
+    grid-column: 7/12;
+    background-color: black;
+    color: white;
+}
+.sidebar-anoher{
+    background: purple;
+    grid-column: 12/14;
+    grid-row: -3/-1;
+}
+.footer{
+ background-color: pink;
+ grid-column: 1/14;
+ height: 50px;
+}
